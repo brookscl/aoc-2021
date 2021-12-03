@@ -1,7 +1,13 @@
-(ns aoc-2021.core
-  (:gen-class))
+(ns aoc-2021.core)
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn str->int
+  [str]
+  (Integer/parseInt str))
+
+(load "day1")
+;(load "day2")
+;(load "day3")
+;(load "day4")
+;(load "day5")
+;(load "day6")
+
