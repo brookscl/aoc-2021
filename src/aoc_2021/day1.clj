@@ -8,10 +8,9 @@
 
 (defn deeper
   [[l1 l2]]
-  (if (> l2 l1) 1 0))
+  (> l2 l1))
 
 (defn count-increasing
   "Count increasing depths in specified file"
   [depth-file]
-  (reduce + (map deeper (partition 2 1 (parse (slurp depth-file)))
-  )))
+  (count (filter deeper (partition 2 1 (parse (slurp depth-file))))))
